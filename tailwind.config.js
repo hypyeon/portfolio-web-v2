@@ -9,7 +9,8 @@ export default {
     extend: {
       fontFamily: {
         "space": ["Space Mono", "monospace"],
-        "myn": ["Mynerve", "cursive"]
+        "myn": ["Mynerve", "cursive"],
+        "josefin": ["Josefin Sans", "sans-serif"]
       }
     },
   },

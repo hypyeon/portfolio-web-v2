@@ -1,33 +1,18 @@
+import LandingPage from "./LandingPage"
+import ProfilePage from "./ProfilePage"
+import PortfolioPage from "./PortfolioPage"
+
 export default function Body() {
   return (
-    <div>
-      <div 
-        className="h-screen w-screen flex flex-col justify-center items-start z-1 relative px-20 gap-8 bg-gradient-to-b from-white to-transparent"
-      >
-      <p
-        className="text-6xl text-left font-silk"
-      >
-        <span className="font-space">Frontend Dev.</span><span className="font-myn"> UI Engineer.</span>
-      </p>
-      <p
-        className="text-3xl text-left font-ubuntu"
-      >
-        Building bridges between users and technology 
-        <br /> through captivating design.
-      </p>
-    </div>
     <div 
-      className="h-screen w-screen flex flex-col justify-center items-start z-1 relative px-20 gap-8 bg-gradient-to-b from-transparent to-white"
+      className="relative z-0 h-[300vh] snap-y snap-mandatory"
     >
-      <div>
-        <img 
-          className="h-200 w-full bg-cover"
-          src="./assets/profile-pic.png"
-          alt="Profile Picture"
-        />
-      </div>
-    </div>
-
+      <div
+        className="bg-[url('./assets/bg-v2.png')] bg-cover bg-center bg-fixed h-screen w-screen -z-5 inset-0 fixed"
+      />
+      <LandingPage />
+      <ProfilePage />
+      <PortfolioPage />
     </div>
   )
 }
