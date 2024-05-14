@@ -10,8 +10,14 @@ export default {
       fontFamily: {
         "space": ["Space Mono", "monospace"],
         "myn": ["Mynerve", "cursive"],
-        "josefin": ["Josefin Sans", "sans-serif"]
-      }
+        "josefin": ["Josefin Sans", "sans-serif"],
+        "rock": ["Rock Salt", "cursive"],
+        "diaLight": ["DiagondLight"],
+        "diaBold": ["DiagondBold"],
+      },
+      animation: {
+        "bounce-short": "bounce 1.5s ease-in-out 3",
+      },
     },
   },
   plugins: [],
