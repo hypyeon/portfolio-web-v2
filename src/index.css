@@ -15,3 +15,7 @@
   font-family: "DiagondBold";
   src: url("../src/assets/fonts/DiagondBold/font.woff2") format('woff2'), url("../src/assets/fonts/DiagondBold/font.woff") format('woff');
 }
+@font-face {
+  font-family: "Llawysgrifen";
+  src: url("../src/assets/fonts/Llawysgrifen/font.woff2") format('woff2'), url("../src/assets/fonts/Llawysgrifen/font.woff") format('woff');
+}

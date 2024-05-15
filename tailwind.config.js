@@ -14,11 +14,14 @@ export default {
         "rock": ["Rock Salt", "cursive"],
         "diaLight": ["DiagondLight"],
         "diaBold": ["DiagondBold"],
+        "llay": ["Llawysgrifen"]
       },
       animation: {
         "bounce-short": "bounce 1.5s ease-in-out 3",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animate')
+  ],
 }
