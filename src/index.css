@@ -19,3 +19,19 @@
   font-family: "Llawysgrifen";
   src: url("../src/assets/fonts/Llawysgrifen/font.woff2") format('woff2'), url("../src/assets/fonts/Llawysgrifen/font.woff") format('woff');
 }
+@font-face {
+  font-family: "CremSlabRegular";
+  src: url('../src/assets/fonts/CremSlabRegular/font.woff2') format('woff2'), url('../src/assets/fonts/CremSlabRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CremSlabLight";
+  src: url('../src/assets/fonts/CremSlabLight/font.woff2') format('woff2'), url('../src/assets/fonts/CremSlabLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CremSlabSemiBold";
+  src: url('../src/assets/fonts/CremSlabSemiBold/font.woff2') format('woff2'), url('../src/assets/fonts/CremSlabSemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CremSlabBold";
+  src: url('../src/assets/fonts/CremSlabBold/font.woff2') format('woff2'), url('../src/assets/fonts/CremSlabBold/font.woff') format('woff');
+}

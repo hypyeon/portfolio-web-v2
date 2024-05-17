@@ -3,7 +3,7 @@ import React from 'react';
 const buttons = [
   { text: 'portfolio', color: '#DC9CDF' },
   { text: 'contacts', color: '#B1DAB4' },
-  { text: 'education', color: '#F2C2A5' },
+  { text: 'education', color: '#FDC69D' },
   { text: 'herstory', color: '#A6B5EB' }
 ];
 

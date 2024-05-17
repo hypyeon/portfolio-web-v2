@@ -14,7 +14,11 @@ export default {
         "rock": ["Rock Salt", "cursive"],
         "diaLight": ["DiagondLight"],
         "diaBold": ["DiagondBold"],
-        "llay": ["Llawysgrifen"]
+        "llay": ["Llawysgrifen"],
+        "CSLight": ["CremSlabLight"],
+        "CSReg": ["CremSlabRegular"],
+        "CSSB": ["CremSlabSemiBold"],
+        "CSBold": ["CremSlabBold"],
       },
       animation: {
         "bounce-short": "bounce 1.5s ease-in-out 3",

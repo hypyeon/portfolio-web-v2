@@ -11,7 +11,7 @@ export default function PortfolioPage() {
         <Portfolio />
       </div>
       <div
-        className="flex flex-row xl:gap-16 lg:gap-16 xl:text-xl lg:text-md text-stone-600 font-diaBold tracking-wide relative"
+        className="flex flex-row xl:gap-16 lg:gap-16 xl:text-xl lg:text-md text-stone-600 font-CSBold tracking-wide relative"
       >
         <ButtonGroup />
       </div>
