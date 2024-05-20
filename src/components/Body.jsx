@@ -1,6 +1,6 @@
 import LandingPage from "./LandingPage"
 import ProfilePage from "./ProfilePage"
-import PortfolioPage from "./PortfolioPage"
+import PortfolioPage from "./DetailsPage"
 
 export default function Body() {
   return (

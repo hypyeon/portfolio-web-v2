@@ -25,7 +25,7 @@ export default function LandingPage() {
             />
           </p>
         </div>
-        <p className="absolute z-5 bottom-[5.5rem] left-[50%] -translate-x-[50%] xl:text-xl text-zinc-600 font-CSReg text-zinc-600 tracking-[1px]">Building bridges between technology and people <br /> through <span className='text-zinc-700 font-CSBold'>captivating</span> design and <span className='text-zinc-700 font-CSBold'>intuitive</span> user interface.</p>
+        <p className="absolute z-5 bottom-[5.5rem] left-[50%] -translate-x-[50%] xl:text-xl text-zinc-600 font-CSReg text-zinc-600 tracking-[1px]">Building bridges between technology and people <br /> through <span className='text-[#FDC69D] font-CSBold'>captivating</span> design and <span className='text-[#A6B5EB] font-CSBold'>intuitive</span> user interface.</p>
         <div 
           className='bg-[url("./assets/img/arrow.png")] bg-cover bg-center h-[4vw] w-[4vw] absolute bottom-[1rem] left-[50%] -translate-x-[50%] animate-[bounce_1.5s_infinite]'
         />

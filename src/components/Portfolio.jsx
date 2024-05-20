@@ -3,7 +3,7 @@ import ProjectGroup from "./Projects";
 
 export default function Portfolio() {
   return (
-    <div className="flex gap-[8vw]">
+    <div className="flex gap-[10vw]">
       <ProjectGroup />
     </div>
   );
