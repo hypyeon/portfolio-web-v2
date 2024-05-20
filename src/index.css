@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,4 +35,41 @@
 @font-face {
   font-family: "CremSlabBold";
   src: url('../src/assets/fonts/CremSlabBold/font.woff2') format('woff2'), url('../src/assets/fonts/CremSlabBold/font.woff') format('woff');
+}
+@layer components {
+  .text-highlight-green {
+    @apply rounded-[10rem_1rem_10rem_1rem] bg-green;
+  }
+  .text-highlight-blue {
+    @apply rounded-[10rem_1rem_10rem_1rem] bg-blue;
+  }
+  .text-highlight-purple {
+    @apply rounded-[10rem_1rem_10rem_1rem] bg-purple;
+  }
+}
+@layer utilities {
+  .bg-green {
+    background-image: linear-gradient(
+      -100deg, 
+      rgba(177, 218, 180, 0.05), 
+      rgba(177, 218, 180, 0.5) 100%, 
+      rgba(177, 218, 180, 0.25)
+    );
+  }
+  .bg-blue {
+    background-image: linear-gradient(
+      -100deg, 
+      rgba(166, 181, 235, 0.05), 
+      rgba(166, 181, 235, 0.5) 100%, 
+      rgba(166, 181, 235, 0.25)
+    );
+  }
+  .bg-purple {
+    background-image: linear-gradient(
+      -100deg, 
+      rgba(220, 156, 223, 0.05), 
+      rgba(220, 156, 223, 0.5) 100%, 
+      rgba(220, 156, 223, 0.25)
+    );
+  }
 }

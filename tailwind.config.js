@@ -19,9 +19,19 @@ export default {
         "CSReg": ["CremSlabRegular"],
         "CSSB": ["CremSlabSemiBold"],
         "CSBold": ["CremSlabBold"],
+        "ubuntu": [ "Ubuntu Sans", "sans-serif"]
       },
       animation: {
         "bounce-short": "bounce 1.5s ease-in-out 3",
+      },
+      borderRadius: {
+        'highlight': '1em 0 1em 0',
+      },
+      textShadow: {
+        'text-highlight': '1px 1px 1px #fff',
+      },
+      backgroundImage: {
+        'highlight-gradient': 'linear-gradient(-100deg, rgba(255,250,150,0.15), rgba(255,250,150,0.8) 100%, rgba(255,250,150,0.25))',
       },
     },
   },

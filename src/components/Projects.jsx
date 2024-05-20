@@ -10,7 +10,7 @@ const projects = [
     title: 'Accountant Office Business Website', 
     color: 'border-[#A6B5EB]',
     path: accountant,
-    description: 'A responsive website designed with Figma and built from scratch with HTML, CSS, and JavaScript. On top of introduction of his office, the client specifically wanted to have a form submission feature for their customers to book tax consultation appointments as well as a page that introduces his published accounting books and a blog page.',
+    description: 'A responsive website designed with Figma and built from scratch with HTML, CSS, and JavaScript. On top of his office introduction, the client specifically wanted to have a form submission feature for their customers to book tax consultation appointments as well as a page that introduces his published accounting books and a blog page.',
     padding: 'pl-[16vw]',
     gh: 'https://github.com/hypyeon/phtax',
     site: 'https://www.phtax.co.kr/'
@@ -37,7 +37,7 @@ const projects = [
 function Project({ title, color, path, description, padding, gh, site }) {
   return (
     <div className={`flex flex-col justify-center items-center gap-[1.5rem] snap-center ${padding}`}>
-      <h2 className={`font-CSBold text-[1.5rem] tracking-[0.5px] text-neutral-600 px-6 border-x-4 ${color}`}>{title}</h2>
+      <h3 className={`font-CSBold lg:text-[1rem] tracking-[0.25px] text-neutral-600 px-6 border-x-4 ${color}`}>{title}</h3>
       <div className='relative w-[42vw]'>
         <img 
           src={path}
@@ -45,22 +45,22 @@ function Project({ title, color, path, description, padding, gh, site }) {
           className="h-[40vh] w-[42vw] object-cover rounded-2xl shadow-lg"
         />
         <div className='absolute inset-0 flex items-center justify-center p-12 bg-black bg-opacity-75 rounded-2xl opacity-0 hover:opacity-100 hover:duration-300'>
-          <p className='font-CSReg text-left text-white tracking-wide pb-10'>{description}</p>
-          <div className='absolute bottom-6 flex flex items-end justify-center gap-4 font-CSBold leading-6 text-base text-neutral-600'>
+          <p className='font-ubuntu text-left text-white pb-10 lg:text-sm'>{description}</p>
+          <div className='absolute bottom-6 flex items-end justify-center gap-4 font-CSBold leading-6 text-base text-neutral-600 lg:text-[0.65rem] tracking-wider'>
             {gh && (
-              <a className='bg-white rounded-2xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={gh} target='_blank'>
+              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={gh} target='_blank'>
                 <img 
                   src={github}
-                  className='object-cover w-8 h-8'
+                  className='object-cover w-6 h-6'
                 />
                 <p>Github Repo</p>
               </a>
             )}
             {site && (
-              <a className='bg-white rounded-2xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={site} target='_blank'>
+              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={site} target='_blank'>
                 <img 
                   src={web}
-                  className='object-cover w-8 h-8'
+                  className='object-cover w-6 h-6'
                 />
                 <p>Visit Site</p>
               </a>

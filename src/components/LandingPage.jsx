@@ -25,9 +25,9 @@ export default function LandingPage() {
             />
           </p>
         </div>
-        <p className="absolute z-5 bottom-[5.5rem] left-[50%] -translate-x-[50%] xl:text-xl text-zinc-600 font-CSReg text-zinc-600 tracking-[1px]">Building bridges between technology and people <br /> through <span className='text-[#FDC69D] font-CSBold'>captivating</span> design and <span className='text-[#A6B5EB] font-CSBold'>intuitive</span> user interface.</p>
+        <p className="absolute z-5 lg:bottom-[3.5rem] left-[50%] -translate-x-[50%] xl:text-xl lg:text-[1rem] font-CSReg text-zinc-600 tracking-[0.75px] leading-[1.75rem] w-screen">Building bridges between technology and people <br /> through <span className='text-highlight-green'>captivating</span> design and <span className='text-highlight-blue'>intuitive</span> user interface.</p>
         <div 
-          className='bg-[url("./assets/img/arrow.png")] bg-cover bg-center h-[4vw] w-[4vw] absolute bottom-[1rem] left-[50%] -translate-x-[50%] animate-[bounce_1.5s_infinite]'
+          className='bg-[url("./assets/img/arrow.png")] bg-cover bg-center h-[4vw] w-[4vw] absolute lg:bottom-[0.5rem] left-[50%] -translate-x-[50%] animate-[bounce_1.5s_infinite]'
         />
       </div>
       {/* <div className="bg-[url('./assets/arrow.png')] bg-cover bg-center h-[4vw] w-[4vw] absolute bottom-12 animate-bounce" /> */}

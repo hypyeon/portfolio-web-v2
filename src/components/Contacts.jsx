@@ -51,7 +51,7 @@ export default function ContactLinks() {
             <img 
               src={contact.path} 
               alt="contact icon" 
-              className="w-16 h-16" 
+              className="lg:w-12 lg:h-12" 
             />
           </a>
         ) : (
@@ -62,7 +62,7 @@ export default function ContactLinks() {
             <img 
               src={contact.path} 
               alt="contact icon" 
-              className="w-16 h-16" 
+              className="lg:w-12 lg:h-12" 
             />
           </button>
         )
