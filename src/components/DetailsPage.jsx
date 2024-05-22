@@ -5,7 +5,7 @@ import ContactLinks from "./Contacts"
 import Languages from "./Languages"
 import Journey from "./Journey"
 
-export default function PortfolioPage() {
+export default function DetailsPage() {
   const [activeButton, setActiveButton] = useState('');
   const handleButtonClick = (text) => setActiveButton(text);
   return (

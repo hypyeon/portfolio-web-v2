@@ -58,7 +58,7 @@ export default function ContactLinks() {
           <button 
             key={index} 
             onClick={() => handleCopyToClipboard(contact.username)} 
-            className="hover:mb-4 hover:duration-300">
+            className="pointer hover:mb-4 hover:duration-300">
             <img 
               src={contact.path} 
               alt="contact icon" 
