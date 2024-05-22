@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-typewriter": "^1.0.1",
+    "tailwindcss": "3.4.3",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-animated": "^1.0.1",
     "vite": "^5.2.0"
   }
 }

@@ -36,8 +36,8 @@ const projects = [
 
 function Project({ title, color, path, description, padding, gh, site }) {
   return (
-    <div className={`flex flex-col justify-center items-center gap-[1.5rem] snap-center ${padding}`}>
-      <h3 className={`font-CSBold lg:text-[1rem] tracking-[0.25px] text-neutral-600 px-6 border-x-4 ${color}`}>{title}</h3>
+    <div className={`flex flex-col justify-center items-center gap-[0.5rem] snap-center ${padding}`}>
+      <h3 className={`font-ubuntu lg:text-[1rem] tracking-tight text-neutral-600 px-6 border-x-4 ${color}`}>{title}</h3>
       <div className='relative w-[42vw]'>
         <img 
           src={path}
