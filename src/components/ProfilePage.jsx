@@ -33,7 +33,7 @@ export default function ProfilePage() {
     >
       <div className="backdrop-blur-[3px] bg-white/30 h-screen w-screen absolute -z-2"></div>
       <div className="relative w-[14vw]" style={{ opacity }}>
-        <h2 className="font-rock text-center xl:text-[3rem] lg:text-[2rem] text-[rgba(101,101,101,0.65)] rotate-[270deg] lg:w-[30vw] lg:h-[10vh]">Hayeong Pyeon</h2>
+        <h2 className="font-rock text-center xl:text-[3rem] lg:text-[1.95rem] text-[#DC9CDF] rotate-[270deg] lg:w-[30vw] lg:h-[10vh]">Hayeong Pyeon</h2>
       </div>
       <div 
         className="bg-[url('./assets/img/profile-pic.png')] bg-cover bg-center h-[39vh] w-[30vh] relative shadow-[inset_0_12px_18px_-2px_rgba(0,0,0,0.3)] z-1" 

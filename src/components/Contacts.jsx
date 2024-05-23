@@ -4,6 +4,7 @@ import li from '../assets/img/contact-linkedin.png';
 import mail from '../assets/img/contact-gmail.png';
 import ig from '../assets/img/contact-ig.png';
 import dc from '../assets/img/contact-discord.png';
+import bc from '../assets/img/biz_card.png';
 
 const contacts = [
   { 
@@ -38,35 +39,45 @@ export default function ContactLinks() {
   };
 
   return (
-    <div className="flex justify-center items-center w-[74vw] gap-8">
-      {contacts.map((contact, index) => (
-        contact.link ? (
-          <a 
-            key={index} 
-            href={contact.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className='hover:mb-4 hover:duration-300'
-          >
-            <img 
-              src={contact.path} 
-              alt="contact icon" 
-              className="lg:w-12 lg:h-12" 
-            />
-          </a>
-        ) : (
-          <button 
-            key={index} 
-            onClick={() => handleCopyToClipboard(contact.username)} 
-            className="pointer hover:mb-4 hover:duration-300">
-            <img 
-              src={contact.path} 
-              alt="contact icon" 
-              className="lg:w-12 lg:h-12" 
-            />
-          </button>
-        )
-      ))}
+    <div className='flex flex-col justify-center items-center w-[74vw] h-[58vh]'>
+      <div className='flex justify-center items-center animate-bounce-card mt-4 relative'>
+        <img 
+          src={bc} 
+          alt="business card" 
+          className='lg:w-[24vw] lg:h-auto' 
+        />
+      </div>
+      <div className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[20%] rounded-full animate-shadow-blur ml-[3vw]'></div>
+      <div className="flex justify-center items-end gap-4 w-[74vw] h-[10vh]">
+        {contacts.map((contact, index) => (
+          contact.link ? (
+            <a 
+              key={index} 
+              href={contact.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className='hover:mb-1 hover:duration-[400ms]'
+            >
+              <img 
+                src={contact.path} 
+                alt="contact icon" 
+                className="lg:w-9 lg:h-9" 
+              />
+            </a>
+          ) : (
+            <button 
+              key={index} 
+              onClick={() => handleCopyToClipboard(contact.username)} 
+              className="pointer hover:mb-1 hover:duration-[400ms]">
+              <img 
+                src={contact.path} 
+                alt="contact icon" 
+                className="lg:w-9 lg:h-9" 
+              />
+            </button>
+          )
+        ))}
+      </div>
     </div>
   );
 }

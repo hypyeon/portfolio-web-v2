@@ -30,7 +30,7 @@ export default function LandingPage() {
         <div className="h-[28vh] w-[28vh] bg-[#A6B5EB] rounded-full absolute -z-2 top-[52vh] left-[70vw] animate-[bounce_1.5s_infinite]"></div>
       </div>*/}
       <div className="h-screen w-screen xl:text-5xl lg:text-4xl flex text-zinc-600 font-rock justify-start items-center px-[22vw] z-2 relative bg-gradient-to-b from-neutral-50 from-0% to-transparent to-50%">
-        <div className='flex gap-6'>
+        <div className='flex gap-4'>
           <p>
             I'm a 
           </p>

@@ -1,31 +1,33 @@
 import React from 'react';
 
 const events = [
-  { year: "2007 - 2018", description: "At the age of 13, I left home, S.Korea, and began my journey studying languages overseas. Went to schools in mainland China, the Philippines, and graduated with a B.A. in Global Studies from Ritsumeikan Univ. in Japan.", position: "up", color: "bg-[#DC9CDF]" },
-  { year: "2019", description: "I started working at a hotel as a main clerk in charge of foreign guests. Started teaching as an ESL instructor as a side job.", position: "down", color: "bg-[#FDC69D]" },
-  { year: "2020 - 2021", description: "Moved to California and attained my green card. In preparing myself for the future, I started learning how to code through CodeCademy.", position: "up", color: "bg-[#A6B5EB]" },
-  { year: "2022", description: "Moved to Portland OR and started working part-time as a Localization QA Tester at Welocalize, while freelancing as a web dev & designer.", position: "down", color: "bg-[#B1DAB4]" },
-  { year: "2023 - current", description: "Joined Epicodus for a Fullstack course to further my coding journey. After successfully graduating, I'm currently interning as a Software Engineer at Fill Marketing.", position: "up", color: "bg-[#DC9CDF]" },
+  { order: 1, year: "2007 - 2018", description: "I left my home country S.Korea and began my journey studying languages overseas. Went to schools in mainland China, the Philippines, and graduated with a B.A. in Global Studies from Ritsumeikan Univ. in Japan in 2018.", position: "up", color: "bg-[#DC9CDF]" },
+  { order: 2, year: "2019", description: "I worked at a hotel in Seoul as a main clerk in charge of foreign guests. Taught ESL students on the side.", position: "down", color: "bg-[#FDC69D]" },
+  { order: 3, year: "2020 - 2021", description: "Moved to California and attained my green card. Found my interest in web design and started learning how to code through CodeCademy.", position: "up", color: "bg-[#A6B5EB]" },
+  { order: 4, year: "2022", description: "Moved to Portland OR and began working part-time as a Localization QA Tester at Welocalize, while freelancing as a web dev & designer.", position: "down", color: "bg-[#B1DAB4]" },
+  { order: 5, year: "2023 - current", description: "To further my coding journey, I joined Epicodus and graduated after successfully completing Fullstack Web & Mobile course. Currently interning as a Software Engineer at Fill Marketing.", position: "up", color: "bg-[#DC9CDF]" },
 ];
 
 export default function Journey() {
   return (
-    <div className="flex flex-col items-center p-8">
-      <div className="relative w-full flex justify-center">
-        <div className="absolute w-[160vw] border-t-4 border-neutral-200"></div>
+    <div className="flex flex-col items-center">
+      <div className="relative flex justify-between w-[68vw] mx-[16vw]">
+        <div className="absolute w-[100vw] border-t-4 border-neutral-200 left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%]"></div>
         {events.map((event, index) => (
           <div 
             key={index} 
-            className={`relative ${index % 2 === 0 ? "mt-8" : "mb-8"} flex flex-col items-center`}
+            className={`relative ${index % 2 === 0 ? "mt-0.5" : "mb-0.5"} flex flex-col items-center mx-4`}
+            style={{ 
+              order: event.order, 
+              // marginLeft: `${event.order * 4}vw` 
+            }}
           >
-            <div className={`w-6 h-6 ${event.color} rounded-full flex items-center justify-center`}>
-              <span className="text-white font-bold">
-                {index + 1}
-              </span>
+            <div className={`w-4 h-4 ${event.color} rounded-full flex items-center justify-center`}>
+              <span className="bg-white w-2 h-2 rounded-full"></span>
             </div>
-            <div className={`absolute ${event.position === "up" ? "-top-12" : "-bottom-12"} bg-gray-800 text-white p-4 rounded-lg shadow-lg w-[20vw] text-[0.75rem]`}>
-              <p className="font-bold">{event.year}</p>
-              <p>{event.description}</p>
+            <div className={`absolute ${event.position === "up" ? "top-8" : "bottom-8"} ${event.order === 1 || event.order === 5 ? "w-[26vw]" : "w-[20vw]"} bg-gray-800 text-white p-4 rounded-lg shadow-lg text-[0.75rem]`}>
+              <p className="font-rock text-[0.65rem] tracking-wider text-center mb-4">{event.year}</p>
+              <p className='text-left font-ubuntu'>{event.description}</p>
             </div>
           </div>
         ))}
