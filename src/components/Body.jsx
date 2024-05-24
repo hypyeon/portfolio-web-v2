@@ -14,7 +14,7 @@ export default function Body() {
       <ProfilePage />
       <PortfolioPage />
       <div className="fixed z-2 top-[1rem] left-[2.5rem]">
-        <p className="text-[3rem] text-zinc-700 font-CSBold">HP<span className="font-space font-black text-[#B1DAB4] -ml-1">.</span></p>
+        <p className="text-[3rem] text-gray-900 font-CSBold">HP<span className="font-space font-black text-[#B1DAB4] -ml-1">.</span></p>
       </div>
     </div>
   )

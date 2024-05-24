@@ -38,14 +38,26 @@ export default {
             opacity: '0.5'
           },
           '50%': {
-            filter: 'blur(7.75px)',
+            filter: 'blur(7.25px)',
             opacity: '1'
           }
-        }
+        },
+        'animatedgradient': {
+          '0%': {
+            'background-position': '0% 50%',
+          },
+          '50%': {
+            'background-position': '100% 50%',
+          },
+          '100%': {
+            'background-position': '0% 50%',
+          },
+        },
       },
       animation: {
         'bounce-card': 'bounce-card 3.5s ease-in-out infinite',
         'shadow-blur': 'shadow-blur 3.5s ease-in-out infinite',
+        'animatedgradient': 'animatedgradient 3s ease alternate infinite',
       },
     },
   },
