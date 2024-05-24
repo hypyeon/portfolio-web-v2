@@ -10,10 +10,9 @@ export default function DetailsPage() {
   const handleButtonClick = (text) => setActiveButton(text);
   return (
     <div 
-      className="h-[100vh] w-screen flex flex-col justify-center items-center px-20 gap-12 bg-gradient-to-b from-transparent to-neutral-50 z-1 snap-end mobile:px-0 mobile:gap-8"
+      className="h-[100vh] w-screen flex flex-col justify-center items-center desktop:px-20 desktop:gap-12 bg-gradient-to-b from-transparent to-neutral-50 z-1 snap-end px-0 gap-8"
     >
-      <div className="backdrop-blur-[3px] bg-white/30 h-screen w-screen absolute -z-2"></div>
-      <div className={`py-4 rounded-3xl w-[74vw] h-[58vh] relative flex items-center overflow-x-scroll snap-x ${ activeButton !== '' ? 'transition-shadow shadow-[inset_0_8px_12px_2px_rgba(0,0,0,0.1)] duration-300 ease-in-out' : 'transition-shadow shadow-[inset_0_0_0_0_rgba(0,0,0,1)] duration-300'} mobile:w-[84vw] mobile:h-[68vh] mobile:mt-12 ${ activeButton === 'journey' ? 'mobile:overflow-x-scroll' : 'mobile:overflow-y-scroll'}`}>
+      <div className={`py-4 rounded-3xl desktop:w-[74vw] desktop:h-[62vh] desktop:mt-16 relative flex items-center desktop:overflow-x-scroll desktop:overflow-y-hidden snap-x ${ activeButton !== '' ? 'transition-shadow shadow-[inset_0_8px_12px_2px_rgba(0,0,0,0.1)] duration-300 ease-in-out' : 'transition-shadow shadow-[inset_0_0_0_0_rgba(0,0,0,1)] duration-300'} w-[84vw] h-[68vh] mt-12 ${ activeButton === 'journey' ? 'overflow-x-scroll' : 'overflow-y-scroll'}`}>
         {activeButton === 'portfolio' && (
           <Portfolio />
         )}
@@ -28,7 +27,7 @@ export default function DetailsPage() {
         )}
       </div>
       <div
-        className="flex flex-row gap-16 text-xl text-stone-600 font-CSBold tracking-wide relative mobile:grid mobile:grid-cols-2 mobile:gap-4"
+        className="desktop:flex desktop:flex-row desktop:gap-8 text-xl text-stone-600 font-CSBold tracking-wide relative grid grid-cols-2 gap-4"
       >
         <ButtonGroup 
           handleButtonClick={handleButtonClick} 

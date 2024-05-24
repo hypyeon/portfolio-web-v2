@@ -17,7 +17,7 @@ const projects = [
     color: 'border-[#A6B5EB]',
     path: accountant,
     description: 'A responsive website designed with Figma and built from scratch with HTML, CSS, and JavaScript. On top of his office introduction, the client specifically wanted to have a form submission feature for their customers to book tax consultation appointments as well as a page that introduces his published accounting books and a blog page.',
-    padding: 'pl-[16vw] mobile:pl-[0] mobile:pt-12',
+    padding: 'desktop:pl-[16vw] desktop:pt-0 pl-0 pt-12',
     gh: 'https://github.com/hypyeon/phtax',
     site: 'https://www.phtax.co.kr/'
   },
@@ -88,7 +88,7 @@ const projects = [
     color: 'border-[#A6B5EB]',
     path: resume,
     description: 'A responsive web application built for my fellow developer students to use to create a resume summary by filling out a form. The user can input their name, pronoun, soft skills, and work experience keywords. The app was built with JavaScript and HTML and styled with SCSS. The app is deployed on GitHub Pages.',
-    padding: 'pl-[0] pr-[16vw] mobile:pr-[0] mobile:pb-12',
+    padding: 'desktop:pl-0 desktop:pr-[16vw] desktop:pb-0 pr-0 pb-12',
     gh: 'https://github.com/hypyeon/resume-summary-maker?tab=readme-ov-file',
     site: 'https://hypyeon.github.io/resume-summary-maker/'
   },
@@ -96,17 +96,17 @@ const projects = [
 
 function Project({ title, color, path, description, padding, gh, site }) {
   return (
-    <div className={`flex flex-col justify-center items-center gap-[0.5rem] snap-center ${padding} mobile:gap-3`}>
-      <h3 className={`font-ubuntu text-[1rem] tracking-tight text-neutral-600 px-6 border-x-4 ${color} mobile:px-3 mobile:text-[0.85rem]`}>{title}</h3>
-      <div className='relative w-[42vw] mobile:w-[64vw]'>
+    <div className={`flex flex-col justify-center items-center desktop:gap-4 snap-center ${padding} gap-3`}>
+      <h3 className={`font-ubuntu desktop:text-[1.25rem] tracking-tight text-neutral-600 desktop:px-6 border-x-4 ${color} px-3 text-[0.85rem]`}>{title}</h3>
+      <div className='relative desktop:w-[42vw] w-[64vw]'>
         <img 
           src={path}
           alt={path}
-          className="h-[40vh] w-[42vw] object-cover rounded-2xl shadow-lg mobile:h-[20vh] mobile:w-[64vw]"
+          className="desktop:h-[40vh] desktop:w-[42vw] object-cover rounded-2xl shadow-lg h-[20vh] w-[64vw]"
         />
-        <div className='absolute inset-0 flex items-center justify-center p-12 bg-black bg-opacity-75 rounded-2xl opacity-0 hover:opacity-100 hover:duration-300 mobile:p-0'>
-          <p className='font-ubuntu text-left text-white pb-10 text-sm leading-6 mobile:hidden'>{description}</p>
-          <div className='absolute bottom-6 flex items-end justify-center gap-4 font-CSBold leading-6 text-base text-neutral-600 text-[0.65rem] tracking-wider mobile:font-ubuntu mobile:tracking-normal mobile:text-[0.75rem] mobile:gap-2 mobile:bottom-[50%] mobile:translate-y-[50%]'>
+        <div className='absolute inset-0 flex items-center justify-center desktop:p-8 bg-black bg-opacity-75 rounded-2xl opacity-0 hover:opacity-100 hover:duration-300 p-0'>
+          <p className='desktop:block font-ubuntu text-left text-white pb-10 text-sm desktop:leading-5 leading-6 hidden'>{description}</p>
+          <div className='absolute desktop:bottom-6 desktop:translate-y-0 flex items-end justify-center desktop:gap-4 desktop:font-CSBold leading-6 desktop:text-[0.85rem] text-neutral-600 text-[0.65rem] desktop:tracking-wide font-ubuntu tracking-normal text-[0.75rem] gap-2 bottom-[50%] translate-y-[50%]'>
             {gh && (
               <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={gh} target='_blank'>
                 <img 

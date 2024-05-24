@@ -29,28 +29,27 @@ export default function ProfilePage() {
 
   return (
     <div 
-      className="h-[100vh] w-screen flex flex-row justify-center items-center z-1 text-left snap-start" 
+      className="h-[100vh] w-screen flex flex-row justify-center items-center z-1 text-left desktop:snap-start" 
     >
-      <div className="backdrop-blur-[3px] bg-white/30 h-screen w-screen absolute -z-2 mobile:bg-gradient-to-b mobile:from-[#A6B5EB] mobile:to-transparent mobile:to-50%"></div>
       <div 
-        className='flex flex-row justify-center items-center px-20 gap-6 bg-gray-900 mobile:flex-col'
+        className='flex desktop:flex-row justify-center items-center px-20 gap-8 xl:gap-12 bg-gray-900 flex-col'
       >
         <div className="relative w-[14vw]" style={{ opacity }}>
-          <h2 className="font-rock text-center text-[2.5rem] text-white drop-shadow-[-6px_2px_3px_rgba(0,0,0,0.5)] rotate-[270deg] w-[30vw] h-[10vh] mobile:hidden">Hayeong Pyeon</h2>
+          <h2 className="font-rock text-center desktop:text-[1.75rem] xl:text-[2.5rem] text-[2.5rem] text-white drop-shadow-[-6px_2px_3px_rgba(0,0,0,0.5)] rotate-[270deg] w-[30vw] h-[10vh] hidden desktop:block">Hayeong Pyeon</h2>
         </div>
         <div 
-          className="lg:bg-[url('./assets/img/profile-pic.png')] bg-cover bg-center h-[39vh] w-[30vh] relative shadow-[inset_0_12px_18px_-2px_rgba(0,0,0,0.3)] z-1 mobile:bg-[url('./assets/img/profile-pic-m.png')] mobile:h-[26vh] mobile:w-[22vh] mobile:rounded-full mobile:animate-bounce-card mobile:shadow-none mobile:border-4" 
+          className="desktop:bg-[url('./assets/img/profile-pic.png')] bg-cover bg-center desktop:h-[45vh] desktop:w-[35vh] desktop:rounded-none desktop:animate-none relative desktop:shadow-[inset_0_12px_18px_-2px_rgba(0,0,0,0.3)] desktop:border-0 z-1 bg-[url('./assets/img/profile-pic-m.png')] h-[26vh] w-[22vh] rounded-full animate-bounce-card shadow-none border-4" 
           style={{ opacity }}
         />
         <div 
-          className='hidden w-[16vw] h-[1vh] bg-gray-400 relative rounded-full animate-shadow-blur mobile:block' 
+          className='desktop:hidden w-[16vw] h-[1vh] bg-gray-400 relative rounded-full animate-shadow-blur block' 
           style={{ opacity }} 
         />
         <div 
-          className="relative w-[30vw] font-ubuntu flex flex-col gap-4 text-zinc-600 text-[1.25rem] mr-[6vw] leading-[1.75rem] mobile:w-[78vw] mobile:mr-0 mobile:gap-2 mobile:text-[0.95rem] mobile:leading-[1.5rem]"
+          className="relative desktop:w-[34vw] xl:w-[28vw] font-ubuntu flex flex-col desktop:gap-4 text-zinc-600 desktop:text-[1rem] desktop:mr-[6vw] desktop:leading-[1.5rem] w-[78vw] mr-0 gap-2 text-[0.95rem] leading-[1.5rem]"
           style={{ opacity }}
         >
-          <p className="text-zinc-500 mb-2 mobile:text-center">
+          <p className="text-zinc-500 mb-2 text-center desktop:text-left">
             [ha-young]<span className='text-neutral-300'> | </span>편하영<span className='text-neutral-300'> | </span>片河映
           </p>
           <p>
