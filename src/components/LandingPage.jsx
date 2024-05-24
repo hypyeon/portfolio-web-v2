@@ -24,14 +24,17 @@ export default function LandingPage() {
     <div 
       className="h-screen w-screen snap-center"
     >
-      <div className="backdrop-blur-[3px] bg-white/30 h-screen w-screen absolute -z-2"></div>
+      <div className="backdrop-blur-[3px] bg-white/30 h-screen w-screen absolute -z-2 mobile:bg-gradient-to-b mobile:from-transparent mobile:from-50% mobile:to-[#A6B5EB]"></div>
       {/* <div className='blur-[92px]'>
         <div className="h-[40vh] w-[40vh] bg-[#DC9CDF] rounded-full absolute -z-2 top-[24vh] left-[12vw] animate-[bounce_2s_infinite]"></div>
         <div className="h-[28vh] w-[28vh] bg-[#A6B5EB] rounded-full absolute -z-2 top-[52vh] left-[70vw] animate-[bounce_1.5s_infinite]"></div>
       </div>*/}
-      <div className="h-screen w-screen xl:text-5xl lg:text-4xl flex text-zinc-600 font-rock justify-start items-center px-[22vw] z-2 relative bg-gradient-to-b from-neutral-50 from-0% to-transparent to-50%">
-        <div className='flex gap-4'>
-          <p>
+      <div className="h-screen w-screen text-5xl flex text-zinc-600 font-rock justify-start items-center px-[22vw] z-2 relative bg-gradient-to-b from-neutral-50 from-0% to-transparent to-50% mobile:text-2xl mobile:pl-[12vw] mobile:pr-0">
+        <div className='flex gap-4 mobile:flex-col mobile:items-start'>
+          <p className='hidden mobile:block font-CSBold text-left'>
+            Hey there, <br /> I'm Hayeong Pyeon <span className='font-ubuntu'>-</span>
+          </p>
+          <p className='mobile:hidden'>
             I'm a 
           </p>
           <p className="tracking-tight">
@@ -44,7 +47,9 @@ export default function LandingPage() {
             />
           </p>
         </div>
-        <div className='absolute flex flex-col left-[2.5rem] bottom-[2.5rem] gap-3' style={{ opacity }}>
+        <div 
+          className='absolute flex flex-col left-[2.5rem] bottom-[2.5rem] gap-3 mobile:flex-row mobile:top-[1.5rem] mobile:left-auto mobile:right-[1.75rem] mobile:gap-2' 
+          style={{ opacity }}>
           <div className='hover:ml-1 hover:duration-200 pointer'>
             <a 
               href="https://www.linkedin.com/in/hayeongpyeon/" 
@@ -53,7 +58,7 @@ export default function LandingPage() {
             >
               <img 
                 src={li} 
-                className="lg:w-10 lg:h-10" 
+                className="w-10 h-10 mobile:w-9 mobile:h-9" 
               />
             </a>
           </div>
@@ -65,16 +70,19 @@ export default function LandingPage() {
             >
               <img 
                 src={gh} 
-                className="lg:w-10 lg:h-10" 
+                className="w-10 h-10 mobile:w-9 mobile:h-9" 
               />
             </a>
           </div>
         </div>
-        <div className='absolute rotate-[270deg] top-[50vh] -translate-y-[50%] right-[1.5rem] translate-x-[50%]' style={{ opacity }}>
-          <p className="z-5 xl:text-xl lg:text-[0.75rem] font-ubuntu text-zinc-500 leading-[1.75rem]">Building bridges between technology and people through <span className='text-highlight-green'>captivating</span> design and <span className='text-highlight-blue'>intuitive</span> user interface.</p>
+        <div 
+          className='absolute rotate-[270deg] top-[50vh] -translate-y-[50%] right-[1.5rem] translate-x-[50%] mobile:hidden' 
+          style={{ opacity }}
+        >
+          <p className="z-5 text-[0.9rem] font-ubuntu text-zinc-500 leading-[1.75rem]">Building bridges between technology and people through <span className='text-highlight-green'>captivating</span> design and <span className='text-highlight-blue'>intuitive</span> user interface.</p>
         </div>
         <div 
-          className='bg-[url("./assets/img/arrow.png")] bg-cover bg-center h-[4vw] w-[4vw] absolute lg:bottom-[0.5rem] left-[50%] -translate-x-[50%] animate-bounce'
+          className='bg-[url("./assets/img/arrow.png")] bg-cover bg-center h-[4vw] w-[4vw] absolute bottom-[0.5rem] left-[50%] -translate-x-[50%] animate-bounce mobile:hidden'
         />
       </div>
       {/* <div className="bg-[url('./assets/arrow.png')] bg-cover bg-center h-[4vw] w-[4vw] absolute bottom-12 animate-bounce" /> */}

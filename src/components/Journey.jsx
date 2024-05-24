@@ -11,8 +11,8 @@ const events = [
 export default function Journey() {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative flex justify-between w-[68vw] mx-[16vw]">
-        <div className="absolute w-[100vw] border-t-4 border-neutral-200 left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%]"></div>
+      <div className="relative flex justify-between w-[68vw] mx-[16vw] mobile:w-[176vw] mobile:mx-[32vw]">
+        <div className="absolute w-[100vw] border-t-4 border-neutral-200 left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%] mobile:w-[240vw]"></div>
         {events.map((event, index) => (
           <div 
             key={index} 
@@ -25,7 +25,7 @@ export default function Journey() {
             <div className={`w-4 h-4 ${event.color} rounded-full flex items-center justify-center`}>
               <span className="bg-white w-2 h-2 rounded-full"></span>
             </div>
-            <div className={`absolute ${event.position === "up" ? "top-8" : "bottom-8"} ${event.order === 1 || event.order === 5 ? "w-[26vw]" : "w-[20vw]"} bg-gray-800 text-white p-4 rounded-lg shadow-lg text-[0.75rem]`}>
+            <div className={`absolute ${event.position === "up" ? "top-8" : "bottom-8"} ${event.order === 1 || event.order === 5 ? "w-[26vw] mobile:w-[64vw]" : "w-[20vw] mobile:w-[54vw]"} bg-gray-800 text-white p-4 rounded-lg shadow-lg text-[0.75rem]`}>
               <p className="font-rock text-[0.65rem] tracking-wider text-center mb-4">{event.year}</p>
               <p className='text-left font-ubuntu'>{event.description}</p>
             </div>

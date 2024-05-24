@@ -6,6 +6,14 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'mobile': '320px',
+      // 'sm': '640px',
+      // 'md': '768px',
+      // 'lg': '1024px',
+      // 'xl': '1280px',
+      // '2xl': '1536px',
+    },
     extend: {
       fontFamily: {
         "space": ["Space Mono", "monospace"],

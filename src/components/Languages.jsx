@@ -1,7 +1,7 @@
 export default function Languages() {
   return (
-    <div className="w-[74vw] h-[58vh] flex justify-center items-center ">
-      <div className="flex justify-start items-start bg-gray-900 text-white font-mono px-4 py-20 rounded-l-3xl text-[0.75rem] w-[37vw] ">
+    <div className="w-[74vw] h-[58vh] flex justify-center items-center mobile:w-[84vw] mobile:flex-col">
+      <div className="flex justify-start items-start bg-gray-900 text-white font-mono px-4 py-16 rounded-l-3xl text-[0.75rem] w-[28vw] mobile:w-[84vw] mobile:rounded-none mobile:pt-4 mobile:pb-[1px]">
         <div className="mr-4 text-right text-gray-500">
           <p>1</p>
           <p>2</p>
@@ -37,7 +37,7 @@ export default function Languages() {
           <p>&nbsp;&nbsp;&#125;</p>
         </div>
       </div>
-      <div className="flex justify-start items-start bg-gray-900 text-white font-mono px-4 py-20 rounded-r-3xl text-[0.75rem] w-[37vw] ">
+      <div className="flex justify-start items-start bg-gray-900 text-white font-mono px-4 py-16 rounded-r-3xl text-[0.75rem] w-[28vw] mobile:w-[84vw] mobile:rounded-none mobile:pb-4 mobile:pt-[1px]">
         <div className="mr-4 text-right text-gray-500">
           <p>16</p>
           <p>17</p>

@@ -39,15 +39,15 @@ export default function ContactLinks() {
   };
 
   return (
-    <div className='flex flex-col justify-center items-center w-[74vw] h-[58vh]'>
+    <div className='flex flex-col justify-center items-center w-[74vw] h-[58vh] mobile:w-[84vw] mobile:gap-12'>
       <div className='flex justify-center items-center animate-bounce-card mt-4 relative'>
         <img 
           src={bc} 
           alt="business card" 
-          className='lg:w-[24vw] lg:h-auto' 
+          className='w-[24vw] h-auto mobile:w-[78vw]' 
         />
       </div>
-      <div className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[20%] rounded-full animate-shadow-blur ml-[3vw]'></div>
+      <div className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[20%] rounded-full animate-shadow-blur ml-[3vw] mobile:hidden'></div>
       <div className="flex justify-center items-end gap-4 w-[74vw] h-[10vh]">
         {contacts.map((contact, index) => (
           contact.link ? (
@@ -61,7 +61,7 @@ export default function ContactLinks() {
               <img 
                 src={contact.path} 
                 alt="contact icon" 
-                className="lg:w-9 lg:h-9" 
+                className="w-9 h-9" 
               />
             </a>
           ) : (
@@ -72,7 +72,7 @@ export default function ContactLinks() {
               <img 
                 src={contact.path} 
                 alt="contact icon" 
-                className="lg:w-9 lg:h-9" 
+                className="w-9 h-9" 
               />
             </button>
           )
