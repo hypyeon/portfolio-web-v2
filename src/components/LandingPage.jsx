@@ -25,18 +25,40 @@ export default function LandingPage() {
       className="h-screen w-screen snap-center"
     >
       <div 
-        className="h-screen flex text-gray-900 font-rock justify-start items-center z-2 relative bg-gradient-to-b from-neutral-50 to-transparent to-65% text-2xl pl-[12vw] pr-0
+        className="h-screen flex text-gray-900 font-rock justify-start items-center z-2 relative bg-gradient-to-b from-neutral-50 to-transparent to-65% pl-[12vw] pr-0 text-[1.25rem]
+        mobile-lg:text-2xl 
         desktop:h-screen desktop:text-4xl desktop:px-[24vw] 
         xl:text-5xl xl:px-[25vw]"
       >
-        <div className='desktop:flex gap-4 flex-col items-start'>
-          <p className='desktop:hidden block font-CSBold text-left'>
-            Hey there, <br /> I'm Hayeong Pyeon <span className='font-ubuntu'>-</span>
+        <div 
+          className='gap-4 flex-col items-start
+          desktop:flex'
+          style={{ opacity }}
+        >
+          <p 
+            className='block font-CSBold text-left leading-[2rem] 
+            mobile-lg:leading-[2.25rem]
+            desktop:hidden'
+            data-aos="fade-left"
+            data-aos-duration="1600"
+            data-aos-delay="200"
+          >
+            <span className='text-highlight-blue'>Hey</span> there, <br /> I'm Hayeong Pyeon <span className='font-ubuntu'>-</span>
           </p>
-          <p className='hidden desktop:block'>
+          <p 
+            className='hidden desktop:block'
+            data-aos="fade-in"
+            data-aos-duration="1600"
+            data-aos-delay="200"
+          >
             I'm a 
           </p>
-          <p className="tracking-tight desktop:mt-0 mt-4">
+          <p 
+            className="tracking-tight desktop:mt-0 mt-4"
+            data-aos="fade-in"
+            data-aos-duration="1600"
+            data-aos-delay="1000"
+          >
             <Typewriter 
               options={{
                 strings: ['Software Engineer .', 'Frontend Developer .', 'UI Designer .'],
@@ -47,7 +69,8 @@ export default function LandingPage() {
           </p>
         </div>
         <div 
-          className='absolute flex desktop:flex-col desktop:left-[2.5rem] desktop:bottom-[2.5rem] desktop:top-auto desktop:gap-3 flex-row top-[1.5rem] left-auto right-[1.75rem] gap-2' 
+          className='absolute flex flex-row top-[1.5rem] left-auto right-[1.75rem] gap-2 
+          desktop:flex-col desktop:left-[2.5rem] desktop:bottom-[2.5rem] desktop:top-auto desktop:gap-3' 
           style={{ opacity }}>
           <div className='hover:ml-1 hover:duration-200 pointer'>
             <a 

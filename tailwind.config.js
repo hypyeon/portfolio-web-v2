@@ -7,12 +7,13 @@ export default {
   ],
   theme: {
     screens: {
-      'mobile': '320px',
+      // always start with mobile first, default viewport is 320px to 375px
+      // leaving a note here for future references 
+      'mobile-md': '390px',
       'mobile-lg': '428px',
-      // 'md': '768px',
+      // viewport for tablets? 
       'desktop': '1024px',
       'xl': '1280px',
-      // '2xl': '1536px',
     },
     extend: {
       fontFamily: {

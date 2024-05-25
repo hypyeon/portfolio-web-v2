@@ -39,16 +39,30 @@ export default function ContactLinks() {
   };
 
   return (
-    <div className='flex flex-col justify-center items-center desktop:w-[74vw] h-[58vh] w-[84vw] gap-12 desktop:gap-0'>
-      <div className='flex justify-center items-center animate-bounce-card mt-4 relative'>
+    <div 
+      className='flex flex-col justify-center items-center h-[58vh] w-[84vw] gap-2  
+      mobile-md:gap-12 
+      desktop:w-[74vw] desktop:gap-0'
+      data-aos="fade-in"
+      data-aos-duration="1200"
+    >
+      <div 
+        className='relative flex justify-center items-center animate-bounce-card mt-1 
+        mobile-md:mt-4'
+      >
         <img 
           src={bc} 
           alt="business card" 
-          className='desktop:w-[24vw] h-auto w-[78vw]' 
+          className='h-auto w-[68vw] mobile-lg:w-[78vw] desktop:w-[24vw]' 
         />
       </div>
-      <div className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[20%] rounded-full animate-shadow-blur ml-[3vw] hidden desktop:block'></div>
-      <div className="flex justify-center items-end gap-4 w-[74vw] h-[10vh]">
+      <div 
+        className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[20%] rounded-full animate-shadow-blur ml-[3vw] hidden 
+        desktop:block'
+      />
+      <div 
+        className="w-[74vw] h-[10vh] flex justify-center items-end gap-4"
+      >
         {contacts.map((contact, index) => (
           contact.link ? (
             <a 
@@ -61,7 +75,7 @@ export default function ContactLinks() {
               <img 
                 src={contact.path} 
                 alt="contact icon" 
-                className="w-9 h-9" 
+                className="w-8 h-8 mobile-md:w-9 mobile-md:h-9" 
               />
             </a>
           ) : (
@@ -72,7 +86,7 @@ export default function ContactLinks() {
               <img 
                 src={contact.path} 
                 alt="contact icon" 
-                className="w-9 h-9" 
+                className="w-8 h-8 mobile-md:w-9 mobile-md:h-9" 
               />
             </button>
           )

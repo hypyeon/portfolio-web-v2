@@ -1,7 +1,17 @@
 export default function Languages() {
   return (
-    <div className="desktop:w-[74vw] desktop:h-[58vh] desktop:flex-row flex justify-center items-center w-[84vw] flex-col">
-      <div className="flex justify-start items-start bg-gray-900 text-white font-mono px-4 desktop:py-4 desktop:rounded-l-3xl text-[0.75rem] desktop:w-[32vw] w-[84vw] rounded-none pt-4 pb-[1px]">
+    <div 
+      className="w-[84vw] h-[58vh] flex flex-col bg-gray-900 text-white font-mono text-[0.75rem]  
+      mobile-lg:h-[68vh] 
+      desktop:w-[74vw] desktop:h-[58vh] desktop:flex-row desktop:justify-center desktop:items-center"
+      data-aos="fade-in"
+      data-aos-duration="1200"
+    >
+      <div 
+        className="w-[84vw] flex justify-start items-end px-4 pt-4 bg-gray-900  
+        mobile-lg:h-[34vh] 
+        desktop:py-4 desktop:rounded-l-3xl desktop:w-[32vw] desktop:items-start"
+      >
         <div className="mr-4 text-right text-gray-500">
           <p>1</p>
           <p>2</p>
@@ -37,7 +47,11 @@ export default function Languages() {
           <p>&nbsp;&nbsp;&#125;</p>
         </div>
       </div>
-      <div className="flex justify-start items-start bg-gray-900 text-white font-mono px-4 desktop:py-4 desktop:rounded-r-3xl text-[0.75rem] desktop:w-[32vw] w-[84vw] rounded-none pt-4 pb-[1px]">
+      <div 
+        className="w-[84vw] flex justify-start items-start px-4 pb-4 bg-gray-900 
+        mobile-lg:h-[34vh] 
+        desktop:py-4 desktop:rounded-r-3xl desktop:w-[32vw]"
+      >
         <div className="mr-4 text-right text-gray-500">
           <p>16</p>
           <p>17</p>
