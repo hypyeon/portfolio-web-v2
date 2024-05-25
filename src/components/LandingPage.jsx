@@ -22,9 +22,13 @@ export default function LandingPage() {
 
   return (
     <div 
-      className="h-screen w-screen desktop:snap-center"
+      className="h-screen w-screen snap-center"
     >
-      <div className="h-screen w-screen desktop:text-4xl xl:text-5xl flex text-zinc-600 font-rock justify-start items-center desktop:px-[24vw] xl:px-[25vw] z-2 relative bg-gradient-to-b from-neutral-50 from-0% to-transparent to-50% text-2xl pl-[12vw] pr-0">
+      <div 
+        className="h-screen flex text-gray-900 font-rock justify-start items-center z-2 relative bg-gradient-to-b from-neutral-50 to-transparent to-65% text-2xl pl-[12vw] pr-0
+        desktop:h-screen desktop:text-4xl desktop:px-[24vw] 
+        xl:text-5xl xl:px-[25vw]"
+      >
         <div className='desktop:flex gap-4 flex-col items-start'>
           <p className='desktop:hidden block font-CSBold text-left'>
             Hey there, <br /> I'm Hayeong Pyeon <span className='font-ubuntu'>-</span>

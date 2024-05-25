@@ -106,7 +106,7 @@ function Project({ title, color, path, description, padding, gh, site }) {
         />
         <div className='absolute inset-0 flex items-center justify-center desktop:p-8 bg-black bg-opacity-75 rounded-2xl opacity-0 hover:opacity-100 hover:duration-300 p-0'>
           <p className='desktop:block font-ubuntu text-left text-white pb-10 text-sm desktop:leading-5 leading-6 hidden'>{description}</p>
-          <div className='absolute desktop:bottom-6 desktop:translate-y-0 flex items-end justify-center desktop:gap-4 desktop:font-CSBold leading-6 desktop:text-[0.85rem] text-neutral-600 text-[0.65rem] desktop:tracking-wide font-ubuntu tracking-normal text-[0.75rem] gap-2 bottom-[50%] translate-y-[50%]'>
+          <div className='absolute desktop:bottom-6 desktop:translate-y-0 flex items-end justify-center desktop:gap-4 desktop:font-CSBold leading-6 desktop:text-[0.85rem] text-neutral-600 text-[0.65rem] desktop:tracking-wide font-ubuntu tracking-normal gap-2 bottom-[50%] translate-y-[50%]'>
             {gh && (
               <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={gh} target='_blank'>
                 <img 

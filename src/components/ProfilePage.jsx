@@ -29,28 +29,32 @@ export default function ProfilePage() {
 
   return (
     <div 
-      className="h-[100vh] w-screen flex flex-row justify-center items-center z-1 text-left desktop:snap-start" 
+      className="h-[80vh] w-screen flex flex-row justify-center items-center z-1 text-left snap-center
+      desktop:h-screen" 
     >
       <div 
-        className='flex desktop:flex-row justify-center items-center px-20 gap-8 xl:gap-12 bg-gray-900 flex-col'
+        className='flex justify-center items-center px-20 gap-8 flex-col
+        desktop:flex-row
+        xl:gap-12'
+        style={{ opacity }}
       >
-        <div className="relative w-[14vw]" style={{ opacity }}>
+        <div className="relative w-[14vw]">
           <h2 className="font-rock text-center desktop:text-[1.75rem] xl:text-[2.5rem] text-[2.5rem] text-white drop-shadow-[-6px_2px_3px_rgba(0,0,0,0.5)] rotate-[270deg] w-[30vw] h-[10vh] hidden desktop:block">Hayeong Pyeon</h2>
         </div>
         <div 
           className="desktop:bg-[url('./assets/img/profile-pic.png')] bg-cover bg-center desktop:h-[45vh] desktop:w-[35vh] desktop:rounded-none desktop:animate-none relative desktop:shadow-[inset_0_12px_18px_-2px_rgba(0,0,0,0.3)] desktop:border-0 z-1 bg-[url('./assets/img/profile-pic-m.png')] h-[26vh] w-[22vh] rounded-full animate-bounce-card shadow-none border-4" 
-          style={{ opacity }}
         />
         <div 
-          className='desktop:hidden w-[16vw] h-[1vh] bg-gray-400 relative rounded-full animate-shadow-blur block' 
-          style={{ opacity }} 
+          className='w-[16vw] h-[1vh] bg-gray-400 relative rounded-full animate-shadow-blur block
+          desktop:hidden' 
         />
         <div 
-          className="relative desktop:w-[34vw] xl:w-[28vw] font-ubuntu flex flex-col desktop:gap-4 text-zinc-600 desktop:text-[1rem] desktop:mr-[6vw] desktop:leading-[1.5rem] w-[78vw] mr-0 gap-2 text-[0.95rem] leading-[1.5rem]"
-          style={{ opacity }}
+          className="relative font-ubuntu flex flex-col text-gray-900 w-[68vw] mr-0 gap-2 text-[0.95rem] leading-[1.5rem]
+          desktop:w-[34vw] desktop:gap-4 desktop:mr-[6vw] desktop:leading-[1.5rem] desktop:text-[1rem] 
+          xl:w-[28vw]"
         >
-          <p className="text-zinc-500 mb-2 text-center desktop:text-left">
-            [ha-young]<span className='text-neutral-300'> | </span>편하영<span className='text-neutral-300'> | </span>片河映
+          <p className="mb-2 text-center tracking-wider text-[1rem] desktop:text-left">
+            [ha-young]<span className='text-[#A6B5EB]'> | </span>편하영<span className='text-[#A6B5EB]'> | </span>片河映
           </p>
           <p>
             A self-taught coder transitioned into freelance <span className="text-highlight-purple">web dev and design</span>, and a recent full-stack grad of Epicodus in <span className="text-highlight-green">Portland, OR</span>.

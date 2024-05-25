@@ -5,10 +5,13 @@ import PortfolioPage from "./DetailsPage"
 export default function Body() {
   return (
     <div 
-      className="relative z-0 h-[300vh] mobile:overflow-x-hidden"
+      className="relative z-0 h-[280vh] overflow-x-hidden snap-y snap-mandatory
+      desktop:h-[300vh]"
     >
       <div
-        className="desktop:bg-[url('./assets/img/bg-v2.png')] bg-cover bg-center bg-fixed h-screen w-screen -z-5 inset-0 fixed bg-neutral-50"
+        className="bg-cover bg-center bg-fixed h-screen w-screen -z-5 inset-0 fixed bg-neutral-50
+        desktop:bg-[url('./assets/img/bg.png')] 
+        bg-[url('./assets/img/bg-m.png')]"
       />
       <LandingPage />
       <ProfilePage />

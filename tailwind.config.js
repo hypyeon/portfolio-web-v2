@@ -8,7 +8,7 @@ export default {
   theme: {
     screens: {
       'mobile': '320px',
-      // 'sm': '640px',
+      'mobile-lg': '428px',
       // 'md': '768px',
       'desktop': '1024px',
       'xl': '1280px',
