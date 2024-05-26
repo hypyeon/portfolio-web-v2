@@ -5,9 +5,7 @@ import PortfolioPage from "./DetailsPage"
 export default function Body() {
   return (
     <div 
-      className="relative z-0 h-[290vh] overflow-x-hidden snap-y snap-mandatory
-      mobile-lg:h-[280vh]
-      desktop:h-[300vh]"
+      className="relative z-0 h-fit w-screen overflow-x-hidden"
     >
       <div
         className="bg-cover bg-center bg-fixed h-screen w-screen -z-5 inset-0 fixed bg-neutral-50 bg-[url('./assets/img/bg-m.png')] 

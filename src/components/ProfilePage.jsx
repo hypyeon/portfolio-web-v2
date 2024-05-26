@@ -4,14 +4,13 @@ import Typewriter from 'typewriter-effect'
 export default function ProfilePage() {
   return (
     <div 
-      className="h-[90vh] w-screen flex justify-center items-center z-1 text-left snap-center 
-      mobile-lg:h-[80vh] 
-      desktop:h-[100vh]" 
+      className="h-[90vh] w-screen flex justify-center items-center z-1 text-left 
+      mobile-md:h-fit 
+      desktop:h-[65vh] desktop:snap-start" 
     >
       <div 
         className='flex flex-col justify-center items-center px-0 gap-8  
-        mobile-lg:px-20 
-        desktop:flex-row 
+        desktop:flex-row desktop:px-20 
         xl:gap-12'
       >
         <div className="relative w-[14vw]">
@@ -39,8 +38,9 @@ export default function ProfilePage() {
         />
         <div 
           className="relative font-ubuntu flex flex-col text-gray-900 mr-0 gap-3 text-[0.85rem] leading-[1.25rem] px-[14vw] 
-          mobile-lg:text-[0.95rem] mobile-lg:px-[16vw] mobile-lg:leading-[1.5rem] mobile-lg:gap-2 
-          desktop:w-[34vw] desktop:gap-4 desktop:mr-[6vw] desktop:leading-[1.5rem] desktop:text-[1rem] 
+          mobile-md:text-[0.95rem] mobile-md:px-[12vw] mobile-md:leading-[1.5rem] 
+          mobile-lg:px-[14vw] mobile-lg:leading-[1.75rem] mobile-lg:text-[1rem]  
+          desktop:w-[34vw] desktop:gap-4 desktop:mr-[6vw] desktop:px-0 
           xl:w-[28vw]"
           data-aos="fade-up"
           data-aos-duration="1600"
@@ -49,7 +49,7 @@ export default function ProfilePage() {
         >
           <p 
             className="mb-2 text-center tracking-wide text-[1rem] 
-            desktop:text-left"
+            desktop:text-left desktop:text-[1.25rem]"
           >
             <Typewriter 
               options={{

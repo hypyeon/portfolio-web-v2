@@ -14,6 +14,7 @@ export default {
       // viewport for tablets? 
       'desktop': '1024px',
       'xl': '1280px',
+      '2xl': '1440px',
     },
     extend: {
       fontFamily: {

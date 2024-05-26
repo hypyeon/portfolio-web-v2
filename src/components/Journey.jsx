@@ -37,15 +37,19 @@ export default function Journey() {
               <span className="bg-white w-2 h-2 rounded-full"></span>
             </div>
             <div 
-              className={`absolute bg-gray-800 text-white p-4 rounded-lg shadow-lg text-[0.75rem]
+              className={`absolute bg-gray-800 text-white p-4 rounded-lg shadow-lg text-[0.75rem] 2xl:p-6 
               ${event.position === "up" ? "top-6 mobile-md:top-8" : "bottom-6 mobile-md:bottom-8"} 
-              ${event.order === 1 || event.order === 5 ? "desktop:w-[34vw] w-[64vw]" : "desktop:w-[24vw] w-[54vw]"}`}
+              ${event.order === 1 || event.order === 5 ? "2xl:w-[29vw] xl:w-[31vw] desktop:w-[34vw] w-[64vw]" : "desktop:w-[24vw] w-[54vw]"}`}
             >
               <p 
                 className="font-rock text-[0.65rem] tracking-wider text-center mb-2 
-                mobile-md:mb-4"
+                mobile-md:mb-4 
+                xl:text-[0.8rem]"
               >{event.year}</p>
-              <p className='text-left font-ubuntu'>{event.description}</p>
+              <p 
+                className='text-left font-ubuntu 
+                xl:text-[1rem]'
+              >{event.description}</p>
             </div>
           </div>
         ))}

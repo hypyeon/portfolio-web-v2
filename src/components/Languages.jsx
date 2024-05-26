@@ -1,16 +1,16 @@
 export default function Languages() {
   return (
     <div 
-      className="w-[84vw] h-[58vh] flex flex-col bg-gray-900 text-white font-mono text-[0.75rem]  
-      mobile-lg:h-[68vh] 
-      desktop:w-[74vw] desktop:h-[58vh] desktop:flex-row desktop:justify-center desktop:items-center"
+      className="w-[84vw] h-[58vh] flex flex-col bg-gray-700 text-white font-mono text-[0.75rem]  
+      mobile-md:h-[68vh] 
+      desktop:w-[74vw] desktop:h-[62vh] desktop:flex-row desktop:justify-center desktop:items-center desktop:text-[0.85rem] xl:text-[1rem]"
       data-aos="fade-in"
       data-aos-duration="1200"
     >
       <div 
         className="w-[84vw] flex justify-start items-end px-4 pt-4 bg-gray-900  
-        mobile-lg:h-[34vh] 
-        desktop:py-4 desktop:rounded-l-3xl desktop:w-[32vw] desktop:items-start"
+        mobile-md:h-[34vh] 
+        desktop:py-4 desktop:rounded-l-3xl desktop:w-[37vw] desktop:items-center desktop:h-[62vh]"
       >
         <div className="mr-4 text-right text-gray-500">
           <p>1</p>
@@ -49,8 +49,8 @@ export default function Languages() {
       </div>
       <div 
         className="w-[84vw] flex justify-start items-start px-4 pb-4 bg-gray-900 
-        mobile-lg:h-[34vh] 
-        desktop:py-4 desktop:rounded-r-3xl desktop:w-[32vw]"
+        mobile-md:h-[34vh] 
+        desktop:py-4 desktop:rounded-r-3xl desktop:w-[37vw] desktop:h-[62vh] desktop:items-center"
       >
         <div className="mr-4 text-right text-gray-500">
           <p>16</p>

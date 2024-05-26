@@ -40,7 +40,7 @@ export default function ContactLinks() {
 
   return (
     <div 
-      className='flex flex-col justify-center items-center h-[58vh] w-[84vw] gap-2  
+      className='flex flex-col justify-center items-center w-[84vw] gap-2  
       mobile-md:gap-12 
       desktop:w-[74vw] desktop:gap-0'
       data-aos="fade-in"
@@ -57,7 +57,7 @@ export default function ContactLinks() {
         />
       </div>
       <div 
-        className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[20%] rounded-full animate-shadow-blur ml-[3vw] hidden 
+        className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[18%] rounded-full animate-shadow-blur ml-[3vw] hidden 
         desktop:block'
       />
       <div 
