@@ -7,7 +7,7 @@ export default function ProfilePage() {
   
   return (
     <div 
-      className='relative h-screen w-screen snap-start flex flex-col justify-center items-center px-0 gap-8 text-left 
+      className='relative h-[100dvh] w-screen snap-start flex flex-col justify-center items-center px-0 gap-8 text-left 
       desktop:flex-row desktop:px-20 
       xl:gap-12 3xl:gap-16'
       style={{ opacity }}
