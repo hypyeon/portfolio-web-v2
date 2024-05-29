@@ -8,8 +8,7 @@ export default function Languages() {
       data-aos-duration="1200"
     >
       <div 
-        className="w-[84vw] flex justify-start items-end px-4 pt-4 bg-gray-900  
-        mobile-md:h-[34vh] 
+        className="w-[84vw] h-fit flex justify-start items-end px-4 pt-6 bg-gray-900   
         desktop:py-4 desktop:rounded-l-3xl desktop:w-[37vw] desktop:items-center desktop:h-[62vh]"
       >
         <div className="mr-4 text-right text-gray-500">
@@ -48,8 +47,7 @@ export default function Languages() {
         </div>
       </div>
       <div 
-        className="w-[84vw] flex justify-start items-start px-4 pb-4 bg-gray-900 
-        mobile-md:h-[34vh] 
+        className="w-[84vw] h-fit flex justify-start items-start px-4 pb-6 bg-gray-900 
         desktop:py-4 desktop:rounded-r-3xl desktop:w-[37vw] desktop:h-[62vh] desktop:items-center"
       >
         <div className="mr-4 text-right text-gray-500">

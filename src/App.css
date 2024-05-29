@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -8,8 +7,4 @@
 
 .pointer, button, a {
   cursor: url('../src/assets/img/cursor-pointer.png'), pointer;
-}
-
-html {
-  scroll-snap-type: y mandatory;
 }

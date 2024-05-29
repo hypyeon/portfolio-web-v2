@@ -22,10 +22,10 @@ export default function LandingPage() {
 
   return (
     <div 
-      className="h-screen snap-start flex text-gray-900 font-rock items-center z-2 relative bg-gradient-to-b from-neutral-50 to-transparent to-65% pl-[12vw] pr-0 text-[1.25rem]
-      mobile-md:pl-[15vw] mobile-md:text-[1.5rem] 
-      mobile-lg:text-2xl 
-      desktop:text-4xl desktop:px-[24vw] 
+      className="h-screen flex text-gray-900 font-rock items-center relative bg-gradient-to-b from-neutral-50 to-transparent to-65% pl-[16vw] pr-0 text-[1.25rem]
+      mobile-md:pl-[11vw] mobile-md:text-[1.5rem] 
+      mobile-lg:pl-[16vw] mobile-lg:text-2xl 
+      desktop:h-screen desktop:text-4xl desktop:px-[24vw] 
       xl:text-5xl xl:px-[25vw]"
     >
       <div 
@@ -38,8 +38,8 @@ export default function LandingPage() {
           mobile-md:leading-[2.25rem]
           desktop:hidden'
           data-aos="fade-left"
-          data-aos-duration="1600"
-          data-aos-delay="200"
+          data-aos-duration="1800"
+          data-aos-delay="400"
         >
           <span className='text-highlight-blue'>Hey</span> there, <br /> I'm Hayeong Pyeon <span className='font-ubuntu'>-</span>
         </p>
@@ -55,10 +55,11 @@ export default function LandingPage() {
           className="tracking-tight desktop:mt-0 mt-4"
           data-aos="fade-in"
           data-aos-duration="1600"
-          data-aos-delay="1000"
+          data-aos-delay="1800"
         >
           <Typewriter 
             options={{
+              delay: 80,
               strings: ['Software Engineer .', 'Frontend Developer .', 'UI Designer .'],
               autoStart: true,
               loop: true,

@@ -10,11 +10,11 @@ export default function DetailsPage() {
   const handleButtonClick = (text) => setActiveButton(text);
   return (
     <div 
-      className="h-screen w-screen flex flex-col-reverse justify-center items-center bg-gradient-to-b from-transparent to-neutral-50 z-1 px-0 gap-8
-      desktop:px-20 desktop:flex-col desktop:gap-4 desktop:snap-end"
+      className="relative h-screen w-screen flex flex-col-reverse justify-center items-center px-0 gap-8 
+      desktop:px-20 desktop:flex-col desktop:gap-4"
     >
       <div 
-        className={`w-[84vw] h-[58vh] rounded-3xl relative flex items-center snap-x 
+        className={`w-[84vw] h-[58vh] rounded-3xl flex items-center snap-x 
         ${ activeButton !== '' ? 'shadow-[inset_0_8px_12px_2px_rgba(0,0,0,0.1)]' : 'hidden'} 
         ${ activeButton === 'journey' ? 'overflow-x-scroll' : 'overflow-y-scroll'}
         mobile-md:h-[68vh] 

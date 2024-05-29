@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
+    "./public/index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
@@ -11,7 +11,7 @@ export default {
       // leaving a note here for future references 
       'mobile-md': '390px',
       'mobile-lg': '428px',
-      // viewport for tablets? 
+      // viewport for tablets will go here
       'desktop': '1024px',
       'xl': '1280px',
       '2xl': '1440px',
@@ -19,12 +19,7 @@ export default {
     extend: {
       fontFamily: {
         "space": ["Space Mono", "monospace"],
-        "myn": ["Mynerve", "cursive"],
-        "josefin": ["Josefin Sans", "sans-serif"],
         "rock": ["Rock Salt", "cursive"],
-        "diaLight": ["DiagondLight"],
-        "diaBold": ["DiagondBold"],
-        "llay": ["Llawysgrifen"],
         "CSLight": ["CremSlabLight"],
         "CSReg": ["CremSlabRegular"],
         "CSSB": ["CremSlabSemiBold"],
