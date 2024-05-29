@@ -22,7 +22,7 @@ export default function LandingPage() {
 
   return (
     <div 
-      className="h-screen flex text-gray-900 font-rock items-center relative bg-gradient-to-b from-neutral-50 to-transparent to-65% pl-[16vw] pr-0 text-[1.25rem]
+      className="h-screen snap-start flex text-gray-900 font-rock items-center relative bg-gradient-to-b from-neutral-50 to-transparent to-65% pl-[16vw] pr-0 text-[1.25rem]
       mobile-md:pl-[11vw] mobile-md:text-[1.5rem] 
       mobile-lg:pl-[16vw] mobile-lg:text-2xl 
       desktop:h-screen desktop:text-4xl desktop:px-[24vw] 
@@ -69,8 +69,9 @@ export default function LandingPage() {
       </div>
       <div 
         className='absolute flex flex-row top-[1.5rem] left-auto right-[1.75rem] gap-2 
-        desktop:flex-col desktop:left-[2.5rem] desktop:bottom-[2.5rem] desktop:top-auto desktop:gap-3' 
-        style={{ opacity }}>
+        desktop:flex-col desktop:left-[2.5rem] desktop:bottom-[2.5rem] desktop:top-auto desktop:gap-3 w-fit' 
+        style={{ opacity }}
+      >
         <div className='hover:ml-1 hover:duration-200 pointer'>
           <a 
             href="https://www.linkedin.com/in/hayeongpyeon/" 
@@ -98,7 +99,7 @@ export default function LandingPage() {
         </div>
       </div>
       <div 
-        className='desktop:absolute desktop:rotate-[270deg] desktop:top-[50vh] desktop:-translate-y-[50%] desktop:right-[1.5rem] desktop:translate-x-[50%] hidden desktop:block' 
+        className='hidden desktop:block desktop:absolute desktop:rotate-[270deg] desktop:top-[50vh] desktop:-translate-y-[50%] desktop:right-[2.5rem] desktop:translate-x-[50%]' 
         style={{ opacity }}
       >
         <p className="desktop:z-5 desktop:text-[0.65rem] xl:text-[0.85rem] font-ubuntu text-zinc-500 leading-[1.75rem]">Building bridges between technology and people through <span className='text-highlight-green'>captivating</span> design and <span className='text-highlight-blue'>intuitive</span> user interface.</p>

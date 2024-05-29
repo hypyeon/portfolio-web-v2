@@ -10,7 +10,7 @@ export default function DetailsPage() {
   const handleButtonClick = (text) => setActiveButton(text);
   return (
     <div 
-      className="relative h-screen w-screen flex flex-col-reverse justify-center items-center px-0 gap-8 
+      className="relative h-screen w-screen snap-start flex flex-col-reverse justify-center items-center px-0 gap-8 
       desktop:px-20 desktop:flex-col desktop:gap-4"
     >
       <div 
