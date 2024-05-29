@@ -17,10 +17,13 @@ export default function Journey() {
     >
       <div 
         className="relative w-[176vw] mx-[32vw] flex justify-between
-        desktop:w-[78vw] desktop:mx-[20vw]">
+        desktop:w-[78vw] desktop:mx-[20vw] 
+        3xl:w-[60vw]"
+      >
         <div 
           className="absolute w-[240vw] border-t-4 border-neutral-200 left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%]
-          desktop:w-[118vw]" 
+          desktop:w-[118vw] 
+          3xl:w-[100vw]" 
         />
         {events.map((event, index) => (
           <div 
@@ -39,16 +42,17 @@ export default function Journey() {
             <div 
               className={`absolute bg-gray-800 text-white p-4 rounded-lg shadow-lg text-[0.75rem] 2xl:p-6 
               ${event.position === "up" ? "top-6 mobile-md:top-8" : "bottom-6 mobile-md:bottom-8"} 
-              ${event.order === 1 || event.order === 5 ? "2xl:w-[29vw] xl:w-[31vw] desktop:w-[34vw] w-[64vw]" : "desktop:w-[24vw] w-[54vw]"}`}
+              ${event.order === 1 || event.order === 5 ? "3xl:w-[25vw] 2xl:w-[29vw] xl:w-[31vw] desktop:w-[34vw] w-[64vw]" : "3xl:w-[20vw] desktop:w-[24vw] w-[54vw]"}`}
             >
               <p 
                 className="font-rock text-[0.65rem] tracking-wider text-center mb-2 
                 mobile-md:mb-4 
-                xl:text-[0.8rem]"
+                xl:text-[0.8rem] 
+                3xl:text-[1.25rem] 3xl:mb-6"
               >{event.year}</p>
               <p 
                 className='text-left font-ubuntu 
-                xl:text-[1rem]'
+                xl:text-[1rem] 3xl:text-[1.25rem]'
               >{event.description}</p>
             </div>
           </div>

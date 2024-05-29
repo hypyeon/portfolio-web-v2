@@ -58,10 +58,10 @@ export default function ContactLinks() {
       </div>
       <div 
         className='w-[6vw] h-[1vh] bg-gray-400 absolute bottom-[18%] rounded-full animate-shadow-blur ml-[3vw] hidden 
-        desktop:block'
+        desktop:block 3xl:w-[4vw] 3xl:h-[2vh] 3xl:bg-gray-200'
       />
       <div 
-        className="w-[74vw] h-[10vh] flex justify-center items-end gap-4"
+        className="w-[74vw] h-[10vh] flex justify-center items-end gap-4 3xl:gap-8"
       >
         {contacts.map((contact, index) => (
           contact.link ? (
@@ -75,7 +75,7 @@ export default function ContactLinks() {
               <img 
                 src={contact.path} 
                 alt="contact icon" 
-                className="w-8 h-8 mobile-md:w-9 mobile-md:h-9" 
+                className="w-8 h-8 mobile-md:w-9 mobile-md:h-9 3xl:w-16 3xl:h-16" 
               />
             </a>
           ) : (
@@ -86,7 +86,7 @@ export default function ContactLinks() {
               <img 
                 src={contact.path} 
                 alt="contact icon" 
-                className="w-8 h-8 mobile-md:w-9 mobile-md:h-9" 
+                className="w-8 h-8 mobile-md:w-9 mobile-md:h-9 3xl:w-16 3xl:h-16" 
               />
             </button>
           )

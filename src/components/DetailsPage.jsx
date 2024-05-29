@@ -11,14 +11,15 @@ export default function DetailsPage() {
   return (
     <div 
       className="relative h-screen w-screen snap-start flex flex-col-reverse justify-center items-center px-0 gap-8 
-      desktop:px-20 desktop:flex-col desktop:gap-4"
+      desktop:px-20 desktop:flex-col desktop:gap-4 3xl:gap-8"
     >
       <div 
         className={`w-[84vw] h-[58vh] rounded-3xl flex items-center snap-x 
         ${ activeButton !== '' ? 'shadow-[inset_0_8px_12px_2px_rgba(0,0,0,0.1)]' : 'hidden'} 
         ${ activeButton === 'journey' ? 'overflow-x-scroll' : 'overflow-y-scroll'}
         mobile-md:h-[68vh] 
-        desktop:w-[74vw] desktop:h-[62vh] desktop:mt-12 desktop:overflow-x-scroll desktop:overflow-y-hidden`}
+        desktop:w-[74vw] desktop:h-[62vh] desktop:mt-12 desktop:overflow-x-scroll desktop:overflow-y-hidden 
+        3xl:h-[58vh]`}
       >
         {activeButton === 'portfolio' && (
           <Portfolio />
@@ -38,7 +39,7 @@ export default function DetailsPage() {
         mobile-md:mt-12 
         mobile-lg:gap-4 
         desktop:mt-0 desktop:gap-6 
-        xl:gap-12"
+        xl:gap-12 3xl:gap-16"
         data-aos="fade-down"
         data-aos-duration="1200"
         data-aos-delay="200"
@@ -49,7 +50,10 @@ export default function DetailsPage() {
           activeButton={activeButton}
         />
       </div>
-      <div className="absolute bottom-4 font-ubuntu text-[0.75rem] text-gray-400">
+      <div 
+        className="absolute bottom-4 font-ubuntu text-[0.75rem] text-gray-400 
+        3xl:text-[1rem] 3xl:bottom-8"
+      >
         <p>designed & developed by <span className="font-CSBold text-gray-900">HP</span><span className="font-space -ml-[3px] text-[#B1DAB4] text-[1.25rem]">.</span>© {new Date().getFullYear()}</p>
       </div>
     </div>

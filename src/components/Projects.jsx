@@ -102,9 +102,8 @@ function Project({ title, color, path, description, padding, gh, site }) {
     >
       <h3 
         className={`${color} font-ubuntu tracking-tight text-neutral-600 border-x-4 px-3 text-[0.85rem]
-        desktop:text-[1.05rem] 
-        desktop:px-6 
-        xl:text-[1.15rem]`}
+        desktop:text-[1.05rem] desktop:px-6 
+        xl:text-[1.15rem] 3xl:text-[1.5rem]`}
       >{title}</h3>
       <div 
         className='relative w-[64vw] 
@@ -118,20 +117,22 @@ function Project({ title, color, path, description, padding, gh, site }) {
         />
         <div 
           className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 rounded-2xl opacity-0 hover:opacity-100 hover:duration-300 p-0
-          desktop:p-8 xl:p-16'
+          desktop:p-8 xl:p-16 3xl:p-24'
         >
           <p 
             className='font-ubuntu text-left text-white pb-10 text-sm leading-6 hidden
             desktop:block desktop:leading-5 
-            xl:text-[0.95rem] xl:leading-[1.5rem]'
+            xl:text-[0.95rem] xl:leading-[1.5rem] 
+            3xl:text-[1.15rem] 3xl:leading-[1.75rem]'
           >{description}</p>
           <div 
             className='absolute flex items-end justify-center leading-6 text-neutral-600 text-[0.65rem] font-ubuntu tracking-normal gap-2 bottom-[50%] translate-y-[50%]
             desktop:bottom-6 desktop:translate-y-0 desktop:gap-4 desktop:text-[0.85rem] desktop:font-CSBold desktop:tracking-wide 
-            2xl:bottom-12'
+            2xl:bottom-12 
+            3xl:text-[1rem]'
           >
             {gh && (
-              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={gh} target='_blank'>
+              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300 3xl:px-4 3xl:py-2' href={gh} target='_blank'>
                 <img 
                   src={github}
                   className='object-cover w-6 h-6'
@@ -140,7 +141,7 @@ function Project({ title, color, path, description, padding, gh, site }) {
               </a>
             )}
             {site && (
-              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300' href={site} target='_blank'>
+              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300 3xl:px-4 3xl:py-2' href={site} target='_blank'>
                 <img 
                   src={web}
                   className='object-cover w-6 h-6'
