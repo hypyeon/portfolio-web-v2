@@ -9,11 +9,16 @@ export default function ProfilePage() {
       desktop:h-[65vh] desktop:snap-start" 
     >
       <div 
-        className='flex flex-col justify-center items-center px-0 gap-8  
+        className='relative flex flex-col justify-center items-center px-0 gap-8  
         desktop:flex-row desktop:px-20 
         xl:gap-12'
       >
-        <div className="relative w-[14vw]">
+        <div 
+          className="relative w-[14vw]"
+          data-aos="fade-right"
+          data-aos-duration="1600"
+          data-aos-once="false"
+        >
           <h2 
             className="font-rock text-center text-[2.5rem] text-white drop-shadow-[-6px_2px_3px_rgba(0,0,0,0.5)] rotate-[270deg] w-[30vw] h-[10vh] hidden
             desktop:block desktop:text-[1.75rem] 
