@@ -68,13 +68,13 @@ export default function ProfilePage() {
           />
         </p>
         <p>
-          A self-taught coder transitioned into freelance <span className="text-highlight-purple">web dev and design</span>, and a recent full-stack grad of Epicodus in <span className="text-highlight-green">Portland, OR</span>.
+        <span className="text-highlight-purple">UI Engineer</span>, promoted from a Software Engineer intern role at Fill Marketing. 
         </p>
         <p>
-          My passion lies in creating sleek, user-friendly, responsive websites and applications.
+          Graduated from <span className="text-highlight-blue">Epicodus</span> with the Web & Mobile Fullstack course certificate in Portland, OR.
         </p>
         <p>
-          Currently interning as a <span className="text-highlight-blue">Software Engineer</span> at a tech startup and continuing with freelance work on building websites for small businesses.
+          My coding journey began by self-learning and freelanced as a <span className="text-highlight-green">Web Dev & Designer</span> prior to attending the coding school. 
         </p>
       </div>
     </div>

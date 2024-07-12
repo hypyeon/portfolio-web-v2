@@ -5,7 +5,7 @@ const events = [
   { order: 2, year: "2019", description: "I worked at a hotel in Seoul as a main clerk in charge of foreign guests. Taught ESL students on the side.", position: "down", color: "bg-[#FDC69D]" },
   { order: 3, year: "2020 - 2021", description: "Moved to California and attained my green card. Found my interest in web design and started learning how to code through CodeCademy.", position: "up", color: "bg-[#A6B5EB]" },
   { order: 4, year: "2022", description: "Moved to Portland OR and began working part-time as a Localization QA Tester at Welocalize, while freelancing as a web dev & designer.", position: "down", color: "bg-[#B1DAB4]" },
-  { order: 5, year: "2023 - current", description: "To further my coding journey, I joined Epicodus and graduated after successfully completing Fullstack Web & Mobile course. Currently interning as a Software Engineer at Fill Marketing.", position: "up", color: "bg-[#DC9CDF]" },
+  { order: 5, year: "2023 - current", description: "To further my coding journey, I joined Epicodus and graduated after successfully completing Fullstack Web & Mobile course. Currently employed as UI Engineer at Fill Marketing, promoted from a Software Engineer intern role.", position: "up", color: "bg-[#DC9CDF]" },
 ];
 
 export default function Journey() {
@@ -42,7 +42,7 @@ export default function Journey() {
             <div 
               className={`absolute bg-gray-800 text-white p-4 rounded-lg shadow-lg text-[0.75rem] 2xl:p-6 
               ${event.position === "up" ? "top-6 mobile-md:top-8" : "bottom-6 mobile-md:bottom-8"} 
-              ${event.order === 1 || event.order === 5 ? "3xl:w-[25vw] 2xl:w-[29vw] xl:w-[31vw] desktop:w-[34vw] w-[64vw]" : "3xl:w-[20vw] desktop:w-[24vw] w-[54vw]"}`}
+              ${event.order === 1 || event.order === 5 ? "3xl:w-[25vw] 2xl:w-[29vw] xl:w-[31vw] desktop:w-[35vw] w-[64vw]" : "3xl:w-[20vw] desktop:w-[24vw] w-[54vw]"}`}
             >
               <p 
                 className="font-rock text-[0.65rem] tracking-wider text-center mb-2 
