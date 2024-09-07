@@ -1,11 +1,11 @@
 import React from 'react';
 
 const events = [
-  { order: 1, year: "2007 - 2018", description: "I left my home country S.Korea and began my journey studying languages overseas. Went to schools in mainland China, the Philippines, and graduated with a B.A. in Global Studies from Ritsumeikan Univ. in Japan in 2018.", position: "up", color: "bg-[#DC9CDF]" },
-  { order: 2, year: "2019", description: "I worked at a hotel in Seoul as a main clerk in charge of foreign guests. Taught ESL students on the side.", position: "down", color: "bg-[#FDC69D]" },
-  { order: 3, year: "2020 - 2021", description: "Moved to California and attained my green card. Found my interest in web design and started learning how to code through CodeCademy.", position: "up", color: "bg-[#A6B5EB]" },
-  { order: 4, year: "2022", description: "Moved to Portland OR and began working part-time as a Localization QA Tester at Welocalize, while freelancing as a web dev & designer.", position: "down", color: "bg-[#B1DAB4]" },
-  { order: 5, year: "2023 - current", description: "To further my coding journey, I joined Epicodus and graduated after successfully completing Fullstack Web & Mobile course. Currently employed as UI Engineer at Fill Marketing, promoted from a Software Engineer intern role.", position: "up", color: "bg-[#DC9CDF]" },
+  { order: 1, year: "2007 - 2018", description: "Left my home country S.Korea and began my journey studying languages overseas. Went to schools in mainland China, the Philippines, and graduated with a B.A. in Global Studies from Ritsumeikan university in Kyoto.", position: "up", color: "bg-[#DC9CDF]" },
+  { order: 2, year: "2019", description: "Worked at a hotel in Seoul as a main clerk in charge of foreign guests. Taught ESL students on the side.", position: "down", color: "bg-[#FDC69D]" },
+  { order: 3, year: "2020 - 2021", description: "Moved to California and was granted my U.S. permanent resideny status. Found my interest in programming and web design. Started learning how to code through CodeCademy.", position: "up", color: "bg-[#A6B5EB]" },
+  { order: 4, year: "2022", description: "Moved to Portland OR and began freelancing as a web dev & designer, while working part-time as a Localization QA Tester at Welocalize.", position: "down", color: "bg-[#B1DAB4]" },
+  { order: 5, year: "2023 - current", description: "Graduated from Epicodus and started interning at Fill Marketing as a SWE and am now a UI Engineer. Outside work, I'm continuing app development and expanding my tech and design skills.", position: "up", color: "bg-[#DC9CDF]" },
 ];
 
 export default function Journey() {

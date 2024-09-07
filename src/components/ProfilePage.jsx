@@ -68,13 +68,13 @@ export default function ProfilePage() {
           />
         </p>
         <p>
-        <span className="text-highlight-purple">UI Engineer</span>, promoted from a Software Engineer intern role at Fill Marketing. 
+        <span className="text-highlight-purple">UI Engineer</span> at Fill Marketing. Designing and building awesome web and mobile apps in my spare time. 
         </p>
         <p>
-          Graduated from <span className="text-highlight-blue">Epicodus</span> with the Web & Mobile Fullstack course certificate in Portland, OR.
+          Graduated from <span className="text-highlight-blue">Epicodus</span> with the Web & Mobile Fullstack course certificate in 2024.
         </p>
         <p>
-          My coding journey began by self-learning and freelanced as a <span className="text-highlight-green">Web Dev & Designer</span> prior to attending the coding school. 
+          My coding journey began by self-learning and freelancing as a <span className="text-highlight-green">Web Dev & Designer</span> prior to attending the coding school. 
         </p>
       </div>
     </div>

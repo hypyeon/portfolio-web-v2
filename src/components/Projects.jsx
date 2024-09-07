@@ -1,9 +1,11 @@
 import React from 'react';
+import github from '../assets/img/icon-github.png';
+import web from '../assets/img/icon-web.png';
+import fig from '../assets/img/icon-figma.png';
+import video from '../assets/img/icon-demo.png';
 import accountant from '../assets/img/project_accountant.png';
 import jcd from '../assets/img/project_jcd.png';
 import linkup from '../assets/img/project_linkup-zone.png';
-import github from '../assets/img/icon-github.png';
-import web from '../assets/img/icon-web.png';
 import icshop from '../assets/img/project_icecream-shop.png';
 import nytimes from '../assets/img/project_ny-times.png';
 import currency from '../assets/img/project_currency.png';
@@ -23,11 +25,21 @@ const projects = [
   },
   { 
     title: 'Linkup Zone Messaging App', 
-    color: 'border-[#B1DAB4]',
+    color: 'border-[#DC9CDF]',
     path: linkup,
-    description: "A Capstone project at Epicodus. Linkup Zone is a messaging app that allows users to create an account, log in, and send messages to other users. What sets this app apart from other messaging apps is its time zone features which display with each user's profile, chat rooms, as well as each message sent to one another. The app was built with Redux, Firebase, Firestore, time coversion APIs, React Native and Expo Go.",
+    description: "A mobile messaging app that allows users to create an account, log in, and send messages. What sets this app apart from other messaging apps is its time zone features which display with each user's profile, chat rooms, as well as each message sent to one another. The app was built with Redux, Firebase, Firestore, time coversion APIs, React Native and Expo Go.",
     padding: 'pl-[0]',
     gh: 'https://github.com/hypyeon/linkup-zone',
+    demo: 'https://drive.google.com/file/d/1zqpl03Q-xeADQUYTmJ7RF4yTS30IRJQb/view?usp=sharing'
+  },
+  { 
+    title: 'Canine Guide Mobile App', 
+    color: 'border-[#B1DAB4]',
+    path: '',
+    description: "A personal project built with React Native and Expo Go. Targetted for users who are looking to adopt dogs or learn more about their pets. The guides include what to prepare before adopting dogs, how-to guide for each life stage, communicating with dogs, safe and unsafe food, useful resources such as vet clinics and pet essentials, and more. Simplified and easy-to-read information without sign-in requirements.",
+    padding: 'pl-[0]',
+    gh: 'https://github.com/hypyeon/canine-guide',
+    figma: 'https://www.figma.com/design/aKKJxdjqFw1jvJ5AtxB9CR/Canine-Guide?node-id=104-17&t=Bw6WDqvduTNO8CSC-1'
   },
   { 
     title: 'JCD K-BBQ Restaurant Website', 
@@ -48,22 +60,13 @@ const projects = [
     site: 'https://hypyeon.github.io/NY-Times-API/'
   },
   { 
-    title: 'Icecream Shop Vendor Tracker', 
-    color: 'border-[#DC9CDF]',
-    path: icshop,
-    description: "An independent project at Epicodus. The Icecream Shop Vendor Tracker is a web application that allows the user to track the icecream flavors and vendors that supply the icecream shop. The user can add, edit, and delete flavors and vendors. The app was built with React with Redux (reducers, actions, Redux Test) and styled with SCSS.",
+    title: 'Resume Summary Maker', 
+    color: 'border-[#A6B5EB]',
+    path: resume,
+    description: 'A responsive web application built for my fellow developer students to use to create a resume summary by filling out a form. The user can input their name, pronoun, soft skills, and work experience keywords. The app was built with JavaScript and HTML and styled with SCSS. The app is deployed on GitHub Pages.',
     padding: 'pl-[0]',
-    gh: 'https://github.com/hypyeon/epicodus-project8-inventory-tracker',
-    site: 'https://hypyeon.github.io/epicodus-project8-inventory-tracker/'
-  },
-  { 
-    title: "Currency Exchange RESTful API", 
-    color: 'border-[#B1DAB4]',
-    path: currency,
-    description: "The Currency Exchange API is a RESTful API that allows the user to convert one currency to another. The user can input the amount, select the currency to convert from and to, and get the result. The API was built with JavaScript, RESTful API and Webpack, tested with Postman, and styled with SCSS.",
-    padding: 'pl-[0]',
-    gh: 'https://github.com/hypyeon/epicodus-project6-currency-exchanger?tab=readme-ov-file',
-    site: 'https://hypyeon.github.io/epicodus-project6-currency-exchanger/'
+    gh: 'https://github.com/hypyeon/resume-summary-maker?tab=readme-ov-file',
+    site: 'https://hypyeon.github.io/resume-summary-maker/'
   },
   { 
     title: 'Pizza Parlor Online Ordering', 
@@ -75,6 +78,15 @@ const projects = [
     site: 'https://hypyeon.github.io/Epicodus-project4-pizzaparlor/'
   },
   { 
+    title: "Currency Exchange RESTful API", 
+    color: 'border-[#B1DAB4]',
+    path: currency,
+    description: "The Currency Exchange API is a RESTful API that allows the user to convert one currency to another. The user can input the amount, select the currency to convert from and to, and get the result. The API was built with JavaScript, RESTful API and Webpack, tested with Postman, and styled with SCSS.",
+    padding: 'pl-[0]',
+    gh: 'https://github.com/hypyeon/epicodus-project6-currency-exchanger?tab=readme-ov-file',
+    site: 'https://hypyeon.github.io/epicodus-project6-currency-exchanger/'
+  },
+  { 
     title: 'Programming Language Suggester', 
     color: 'border-[#DC9CDF]',
     path: suggester,
@@ -84,17 +96,17 @@ const projects = [
     site: 'https://hypyeon.github.io/programming-language-suggester/'
   },
   { 
-    title: 'Resume Summary Maker', 
-    color: 'border-[#A6B5EB]',
-    path: resume,
-    description: 'A responsive web application built for my fellow developer students to use to create a resume summary by filling out a form. The user can input their name, pronoun, soft skills, and work experience keywords. The app was built with JavaScript and HTML and styled with SCSS. The app is deployed on GitHub Pages.',
+    title: 'Icecream Shop Vendor Tracker', 
+    color: 'border-[#DC9CDF]',
+    path: icshop,
+    description: "An independent project at Epicodus. The Icecream Shop Vendor Tracker is a web application that allows the user to track the icecream flavors and vendors that supply the icecream shop. The user can add, edit, and delete flavors and vendors. The app was built with React with Redux (reducers, actions, Redux Test) and styled with SCSS.",
     padding: 'desktop:pl-0 desktop:pr-[16vw] desktop:pb-0 pr-0 pb-12 mobile-md:pb-10',
-    gh: 'https://github.com/hypyeon/resume-summary-maker?tab=readme-ov-file',
-    site: 'https://hypyeon.github.io/resume-summary-maker/'
+    gh: 'https://github.com/hypyeon/epicodus-project8-inventory-tracker',
+    site: 'https://hypyeon.github.io/epicodus-project8-inventory-tracker/'
   },
 ];
 
-function Project({ title, color, path, description, padding, gh, site }) {
+function Project({ title, color, path, description, padding, gh, site, demo, figma }) {
   return (
     <div 
       className={`${padding} flex flex-col justify-center items-center snap-center gap-3
@@ -149,6 +161,24 @@ function Project({ title, color, path, description, padding, gh, site }) {
                 <p>Visit Site</p>
               </a>
             )}
+            {demo && (
+              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300 3xl:px-4 3xl:py-2' href={demo} target='_blank'>
+                <img 
+                  src={video}
+                  className='object-cover w-6 h-6'
+                />
+                <p>View Demo</p>
+              </a>
+            )}
+            {figma && (
+              <a className='bg-white rounded-xl flex items-center gap-1 px-2 py-1 hover:mb-1 hover:duration-300 3xl:px-4 3xl:py-2' href={figma} target='_blank'>
+                <img 
+                  src={fig}
+                  className='object-cover w-6 h-6'
+                />
+                <p>Figma File</p>
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -169,6 +199,8 @@ export default function ProjectGroup() {
           padding={project.padding}
           gh={project.gh}
           site={project.site}
+          demo={project.demo}
+          figma={project.figma}
         />
       ))}
     </>

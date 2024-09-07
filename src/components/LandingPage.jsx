@@ -9,7 +9,7 @@ export default function LandingPage() {
 
   return (
     <div 
-      className="relative h-[100dvh] w-screen snap-start flex text-gray-900 font-rock items-center bg-gradient-to-b from-neutral-50 to-transparent to-65% pl-[16vw] pr-0 text-[1.25rem] 
+      className="relative h-[100dvh] w-[100dvw] snap-start flex text-gray-900 font-rock items-center bg-gradient-to-b from-neutral-50 to-transparent to-65% pl-[16vw] pr-0 text-[1.25rem] 
       mobile-md:pl-[11vw] mobile-md:text-[1.5rem] 
       mobile-lg:pl-[16vw] mobile-lg:text-2xl 
       desktop:text-4xl desktop:px-[24vw] 
