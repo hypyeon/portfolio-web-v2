@@ -4,6 +4,7 @@ import web from '../assets/img/icon-web.png';
 import fig from '../assets/img/icon-figma.png';
 import video from '../assets/img/icon-demo.png';
 import accountant from '../assets/img/project_accountant.png';
+import canine from '../assets/img/project_canine-guide.png';
 import jcd from '../assets/img/project_jcd.png';
 import linkup from '../assets/img/project_linkup-zone.png';
 import icshop from '../assets/img/project_icecream-shop.png';
@@ -35,7 +36,7 @@ const projects = [
   { 
     title: 'Canine Guide Mobile App', 
     color: 'border-[#B1DAB4]',
-    path: '',
+    path: canine,
     description: "A personal project built with React Native and Expo Go. Targetted for users who are looking to adopt dogs or learn more about their pets. The guides include what to prepare before adopting dogs, how-to guide for each life stage, communicating with dogs, safe and unsafe food, useful resources such as vet clinics and pet essentials, and more. Simplified and easy-to-read information without sign-in requirements.",
     padding: 'pl-[0]',
     gh: 'https://github.com/hypyeon/canine-guide',
